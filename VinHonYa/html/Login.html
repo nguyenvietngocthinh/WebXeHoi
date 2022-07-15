@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="../Img/icon.png" type="images/x-icon">
+    <link rel="stylesheet" href="../Boostrap/bootstrap.min.css">
+    <script src="../Jquery/jquery-3.6.0.min.js"></script>
+    <script src="../Jquery/bootstrap.min.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+<body style="margin: 0; border: 0;">
+    <div class="container-xxl d-block">
+         <div class="head">
+            <form action="">
+                    <div class="row" style="background-color:#0f0404">
+                        <div class="col-6 p-0">  <img src="../img/Logo_web/logo.jpg" alt="" style="float:left;" width="200px"  ></div>
+                        <div class="col-auto p-0 m-0">
+                            <label for="user" class="  p-1 m-0 text-white">Email hoặc điện thoại</label> <br>
+                            
+                            <div class="row  pl-3">
+                                <input type="text" id="user" name="user" class="form-control-sm" required>
+                            </div>
+            
+                            <div class="row-auto ml-4">
+                                
+                                <input type="checkbox" name="keep_login" id="keep_login" class="form-check-input">
+                                <label for="kekeep_login" class="label-check-input text-white ">Duy trì đăng nhập</label>
+                            </div>
+                        </div>
+        
+                        <div class="col-auto p-0 ml-5 ">
+
+                            <label for="user" class="float-left  p-1 m-0  text-white ">Mật khẩu</label> <br>
+
+                            <div class="row float-right pl-3 ">
+                                <input type="text" id="user" name="user" class="form-control-sm" required>
+                            </div>
+
+                            <div class="row-auto m-0 p-0 ml-1">
+                                <a href="../HTML/Bai_18.html" class="text-white text-decoration-none">Quên mật khẩu?</a>
+                            </div>
+                        </div>
+        
+                        <div class="col-auto p-2 m-0 ">
+                            <button type="button" class="btn btn-sm float-left ml-5 mt-4 text-white" style="background-color: #761010; border: 1px solid black ;">Đăng nhập</button>
+                        </div>
+                    </div>
+            </form>
+         </div>
+
+         <div class="body">
+                <div class="row p-2" style="background-color: #fff;">
+                    
+                    <div class="col-4 px-2 m-auto">
+                       <div class="row-2 mt-5">
+                            <h1 class="font-weight-bold">Đăng Ký</h1>
+                        </div>
+                        <form action="">
+                            
+                        <div class="row-auto  m-0 p-0 mb-3 float-left">
+                            <input type="text" class="form-control-sm" id="Ho" placeholder="Họ" required> <br>
+                            <span id="errorHo" class="text-danger"></span>
+                        </div>
+                        <div class="row-auto m-0 p-0  mb-3 float-right">
+                            <input type="text" class="form-control-sm " id="Ten" placeholder="Tên" required><br>
+                            <span id="errorTen" class="text-danger"></span>
+                        </div>
+                        <div class="row-auto m-0 p-0 mb-3">
+                            <input type="text" class="form-control  " id="Email" placeholder="Email đăng nhập" required>
+                            <span id="errorEmail" class="text-danger"></span>
+                        </div>
+                        <div class="row-auto m-0 p-0 mb-3">
+                            <input type="text" class="form-control" id="check_email" placeholder="Nhập lại email." required>
+                            <span id="errorcheck_email" class="text-danger"></span>
+                        </div>
+                        <div class="row-auto m-0 p-0 mb-3">
+                            <input type="text" class="form-control" id="pass" placeholder="Mật khẩu" required>
+                            <span id="errorPass" class="text-danger"></span>
+                        </div>
+                        <div class="row-auto m-0 p-0 mb-3">
+                            <input type="text" class="form-control" id="Nam_Sinh" placeholder="Năm Sinh" required>
+                            <span id="errorDate" class="text-danger"></span>
+                        </div>
+                        <div class="row-auto m-0 p-0 mb-2">
+                           <button type="button" class="btn btn-success" onclick="dangky()">Đăng ký</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+         </div>
+</body>
+</html>
